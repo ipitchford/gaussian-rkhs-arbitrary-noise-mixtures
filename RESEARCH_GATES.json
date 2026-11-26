@@ -1,0 +1,285 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 26 November 2026 for 0.1.0-candidate from the dated searches of the internal AI-assisted review (25 November 2026), refs.bib, REVIEW_SUMMARY.md and the paper (Sections 1 and 7). It records scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "For every additive noise law, boundedness between global Gaussian RKHSs forces injective affine drift; exact operator norm",
+   "unit": "statement",
+   "paperLocation": "Theorem 2.1 (Theorem A), Remark 2.2",
+   "searches": [
+    {
+     "date": "2026-11-25",
+     "corpus": "arXiv API queries restricted to 15 Oct-25 Nov 2026; Semantic Scholar citation graph of Ikeda-Ishikawa-Sawano 2022; web searches; the Evidence Press corpus (gaussian-rkhs-stochastic-invariance, gaussian-pnp-stability)",
+     "query": "composition operator(s); Fock space + operator; Koopman + kernel; Gaussian + RKHS + invariant; Paley-Wiener + composition; weighted composition sums no cancellation"
+    },
+    {
+     "date": "2026-11-25",
+     "corpus": "the cited works, obtained and read (arXiv versions for journal items): Cho-Choe-Koo-Tien arXiv:2611.26206, Lin-Lu-Yang-Zu arXiv:2611.19948, Hai-Huy-Tien arXiv:2611.21261, Ishikawa arXiv:2604.03965, Sang-Zhao arXiv:2610.28279, Ikeda-Ishikawa-Sawano, Lebedev, Philipp et al. 2024 and 2025, Hertel et al., Tien-Khoi 2019 (two) and 2020, the Evidence Press predecessor release",
+     "query": "one-variable Fock no-cancellation statements and their scope; feature-map continuation device; bandlimited composition rigidity; Gaussian RKHS invariance conditions; stochastic kernel-EDMD error bounds"
+    }
+   ],
+   "closestPriorWork": "Evidence Press predecessor (Gaussian lower bound on the characteristic function); Ikeda-Ishikawa-Sawano (deterministic, spectral hypotheses); Lebedev (bandlimited, continuous maps)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "noise is formal at operator level; new content is cross-space composition rigidity with no regularity on F"
+  },
+  {
+   "claim": "Zero exponential type of the target evaluation-norm logarithm forces affine maps; every positive type admits a nonlinear bounded example",
+   "unit": "statement",
+   "paperLocation": "Theorem 3.1, Proposition 3.2, Corollary 3.3 (Theorem B)",
+   "searches": [
+    {
+     "date": "2026-11-25",
+     "corpus": "arXiv API queries restricted to 15 Oct-25 Nov 2026; Semantic Scholar citation graph of Ikeda-Ishikawa-Sawano 2022; web searches; the Evidence Press corpus (gaussian-rkhs-stochastic-invariance, gaussian-pnp-stability)",
+     "query": "composition operator(s); Fock space + operator; Koopman + kernel; Gaussian + RKHS + invariant; Paley-Wiener + composition; weighted composition sums no cancellation"
+    },
+    {
+     "date": "2026-11-25",
+     "corpus": "the cited works, obtained and read (arXiv versions for journal items): Cho-Choe-Koo-Tien arXiv:2611.26206, Lin-Lu-Yang-Zu arXiv:2611.19948, Hai-Huy-Tien arXiv:2611.21261, Ishikawa arXiv:2604.03965, Sang-Zhao arXiv:2610.28279, Ikeda-Ishikawa-Sawano, Lebedev, Philipp et al. 2024 and 2025, Hertel et al., Tien-Khoi 2019 (two) and 2020, the Evidence Press predecessor release",
+     "query": "one-variable Fock no-cancellation statements and their scope; feature-map continuation device; bandlimited composition rigidity; Gaussian RKHS invariance conditions; stochastic kernel-EDMD error bounds"
+    }
+   ],
+   "closestPriorWork": "Hai-Huy-Tien (entire symbols, Paley-Wiener spaces); Lebedev 2012",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "sharpness shown for bandlimited sources; Gaussian-source sharpness open"
+  },
+  {
+   "claim": "Finite Gaussian-branch mixtures with common linear part are bounded iff each gate is entire within an explicit Gaussian growth bound",
+   "unit": "statement",
+   "paperLocation": "Theorems 5.1, 5.5 (Theorem C)",
+   "searches": [
+    {
+     "date": "2026-11-25",
+     "corpus": "arXiv API queries restricted to 15 Oct-25 Nov 2026; Semantic Scholar citation graph of Ikeda-Ishikawa-Sawano 2022; web searches; the Evidence Press corpus (gaussian-rkhs-stochastic-invariance, gaussian-pnp-stability)",
+     "query": "composition operator(s); Fock space + operator; Koopman + kernel; Gaussian + RKHS + invariant; Paley-Wiener + composition; weighted composition sums no cancellation"
+    },
+    {
+     "date": "2026-11-25",
+     "corpus": "the cited works, obtained and read (arXiv versions for journal items): Cho-Choe-Koo-Tien arXiv:2611.26206, Lin-Lu-Yang-Zu arXiv:2611.19948, Hai-Huy-Tien arXiv:2611.21261, Ishikawa arXiv:2604.03965, Sang-Zhao arXiv:2610.28279, Ikeda-Ishikawa-Sawano, Lebedev, Philipp et al. 2024 and 2025, Hertel et al., Tien-Khoi 2019 (two) and 2020, the Evidence Press predecessor release",
+     "query": "one-variable Fock no-cancellation statements and their scope; feature-map continuation device; bandlimited composition rigidity; Gaussian RKHS invariance conditions; stochastic kernel-EDMD error bounds"
+    }
+   ],
+   "closestPriorWork": "Fock no-cancellation (Tien-Khoi 2019 for differences; Cho-Choe-Koo-Tien and Lin-Lu-Yang-Zu concurrently, one variable)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "common-covariance case is the Gaussian-RKHS counterpart of concurrent one-variable Fock results; different-covariance case not found"
+  },
+  {
+   "claim": "Several-variable Fock no-cancellation with a common invertible linear part",
+   "unit": "statement",
+   "paperLocation": "Corollary 5.3",
+   "searches": [
+    {
+     "date": "2026-11-25",
+     "corpus": "arXiv API queries restricted to 15 Oct-25 Nov 2026; Semantic Scholar citation graph of Ikeda-Ishikawa-Sawano 2022; web searches; the Evidence Press corpus (gaussian-rkhs-stochastic-invariance, gaussian-pnp-stability)",
+     "query": "composition operator(s); Fock space + operator; Koopman + kernel; Gaussian + RKHS + invariant; Paley-Wiener + composition; weighted composition sums no cancellation"
+    },
+    {
+     "date": "2026-11-25",
+     "corpus": "the cited works, obtained and read (arXiv versions for journal items): Cho-Choe-Koo-Tien arXiv:2611.26206, Lin-Lu-Yang-Zu arXiv:2611.19948, Hai-Huy-Tien arXiv:2611.21261, Ishikawa arXiv:2604.03965, Sang-Zhao arXiv:2610.28279, Ikeda-Ishikawa-Sawano, Lebedev, Philipp et al. 2024 and 2025, Hertel et al., Tien-Khoi 2019 (two) and 2020, the Evidence Press predecessor release",
+     "query": "one-variable Fock no-cancellation statements and their scope; feature-map continuation device; bandlimited composition rigidity; Gaussian RKHS invariance conditions; stochastic kernel-EDMD error bounds"
+    }
+   ],
+   "closestPriorWork": "Cho-Choe-Koo-Tien note the several-variable case is open; Tien-Khoi 2020 (single operators, several variables)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "one-variable case credited to the concurrent work"
+  },
+  {
+   "claim": "Exact bump, probit and logistic gate thresholds; kernel-width rule; triangular-noise threshold a_*",
+   "unit": "statement",
+   "paperLocation": "Section 4, Corollaries 6.1, 6.2",
+   "searches": [
+    {
+     "date": "2026-11-25",
+     "corpus": "arXiv API queries restricted to 15 Oct-25 Nov 2026; Semantic Scholar citation graph of Ikeda-Ishikawa-Sawano 2022; web searches; the Evidence Press corpus (gaussian-rkhs-stochastic-invariance, gaussian-pnp-stability)",
+     "query": "composition operator(s); Fock space + operator; Koopman + kernel; Gaussian + RKHS + invariant; Paley-Wiener + composition; weighted composition sums no cancellation"
+    },
+    {
+     "date": "2026-11-25",
+     "corpus": "the cited works, obtained and read (arXiv versions for journal items): Cho-Choe-Koo-Tien arXiv:2611.26206, Lin-Lu-Yang-Zu arXiv:2611.19948, Hai-Huy-Tien arXiv:2611.21261, Ishikawa arXiv:2604.03965, Sang-Zhao arXiv:2610.28279, Ikeda-Ishikawa-Sawano, Lebedev, Philipp et al. 2024 and 2025, Hertel et al., Tien-Khoi 2019 (two) and 2020, the Evidence Press predecessor release",
+     "query": "one-variable Fock no-cancellation statements and their scope; feature-map continuation device; bandlimited composition rigidity; Gaussian RKHS invariance conditions; stochastic kernel-EDMD error bounds"
+    }
+   ],
+   "closestPriorWork": "none found",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "consequences of Theorems A and C"
+  },
+  {
+   "claim": "Method: analytic family of frequency-domain coefficients, division by the characteristic function near zero, zero-type growth lemma; uniform Gram bound for mixtures",
+   "unit": "method",
+   "paperLocation": "Sections 2, 3, 5",
+   "searches": [
+    {
+     "date": "2026-11-25",
+     "corpus": "arXiv API queries restricted to 15 Oct-25 Nov 2026; Semantic Scholar citation graph of Ikeda-Ishikawa-Sawano 2022; web searches; the Evidence Press corpus (gaussian-rkhs-stochastic-invariance, gaussian-pnp-stability)",
+     "query": "composition operator(s); Fock space + operator; Koopman + kernel; Gaussian + RKHS + invariant; Paley-Wiener + composition; weighted composition sums no cancellation"
+    },
+    {
+     "date": "2026-11-25",
+     "corpus": "the cited works, obtained and read (arXiv versions for journal items): Cho-Choe-Koo-Tien arXiv:2611.26206, Lin-Lu-Yang-Zu arXiv:2611.19948, Hai-Huy-Tien arXiv:2611.21261, Ishikawa arXiv:2604.03965, Sang-Zhao arXiv:2610.28279, Ikeda-Ishikawa-Sawano, Lebedev, Philipp et al. 2024 and 2025, Hertel et al., Tien-Khoi 2019 (two) and 2020, the Evidence Press predecessor release",
+     "query": "one-variable Fock no-cancellation statements and their scope; feature-map continuation device; bandlimited composition rigidity; Gaussian RKHS invariance conditions; stochastic kernel-EDMD error bounds"
+    }
+   ],
+   "closestPriorWork": "Ikeda-Ishikawa-Sawano feature-map continuation; uniform Gram/coefficient estimates of Lin-Lu-Yang-Zu",
+   "verdict": "partially-known-cited",
+   "verdictNote": "variants of credited devices"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Anonymous (2026), When Gaussian kernel spaces are invariant under stochastic dynamics, Evidence Press, v0.1.1-candidate",
+   "usedFor": "predecessor; open projects (i) and (ii)",
+   "readWhat": "whole release",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://doi.org/10.5281/zenodo.24089772"
+  },
+  {
+   "citation": "Cho, H. R., Choe, B. R., Koo, H. and Tien, P. T. (2026), The rigidity phenomenon for weighted composition operators on the Fock spaces, arXiv:2611.26206",
+   "usedFor": "concurrent one-variable no-cancellation; several-variable case stated open",
+   "readWhat": "whole paper",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://arxiv.org/abs/2611.26206"
+  },
+  {
+   "citation": "Lin, Z., Lu, Y., Yang, R. and Zu, C. (2026), Finite sums of weighted composition operators on the Fock space, arXiv:2611.19948",
+   "usedFor": "concurrent one-variable no-cancellation",
+   "readWhat": "whole paper",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://arxiv.org/abs/2611.19948"
+  },
+  {
+   "citation": "Hai, P. V., Huy, V. N. and Tien, P. T. (2026), arXiv:2611.21261",
+   "usedFor": "Paley-Wiener weighted composition comparison",
+   "readWhat": "whole paper",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://arxiv.org/abs/2611.21261"
+  },
+  {
+   "citation": "Ikeda, M., Ishikawa, I. and Sawano, Y. (2022), J. Math. Anal. Appl. 511(1) (arXiv:1911.11992)",
+   "usedFor": "deterministic rigidity; continuation device",
+   "readWhat": "whole paper (arXiv version)",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://doi.org/10.1016/j.jmaa.2022.126048"
+  },
+  {
+   "citation": "Ishikawa, I. (2026), arXiv:2604.03965",
+   "usedFor": "weighted self-composition rigidity",
+   "readWhat": "whole paper",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://arxiv.org/abs/2604.03965"
+  },
+  {
+   "citation": "Lebedev, V. V. (2012), Sbornik: Mathematics 203(11)",
+   "usedFor": "bandlimited composition rigidity",
+   "readWhat": "whole paper",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://doi.org/10.1070/SM2012v203n11ABEH004280"
+  },
+  {
+   "citation": "Philipp, F. M. et al. (2024), Appl. Comput. Harmon. Anal. 71; (2025), PAMM 25(1)",
+   "usedFor": "invariance hypothesis in error bounds; linear SDE sufficient condition",
+   "readWhat": "whole papers (arXiv versions)",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://doi.org/10.1016/j.acha.2024.101657"
+  },
+  {
+   "citation": "Hertel, M. et al. (2026), SIAM J. Appl. Dyn. Syst. 25(3)",
+   "usedFor": "stochastic kernel-EDMD bounds in Sobolev spaces (scope)",
+   "readWhat": "whole paper (arXiv version)",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://doi.org/10.1137/26M1839689"
+  },
+  {
+   "citation": "Tien, P. T. and Khoi, L. H. (2019, 2019, 2020), Monatsh. Math. 188(1); Potential Anal. 50(2); Math. Nachr. 293(6)",
+   "usedFor": "Fock boundedness criteria; differences",
+   "readWhat": "whole papers (arXiv versions)",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://doi.org/10.1002/mana.201800197"
+  },
+  {
+   "citation": "Sang, Y. and Zhao, L. (2026), Gaussian Integral Operator between Fock Spaces, arXiv:2610.28279",
+   "usedFor": "Gaussian integral operators on Fock spaces",
+   "readWhat": "whole paper",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://arxiv.org/abs/2610.28279"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Branches with different linear parts",
+   "closingQuestion": "Does the mixture classification extend?",
+   "triedOrSearched": "attempted in the revision round; branch features can coincide at complex states, so the uniform Gram bound fails",
+   "estimatedCost": "new research",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "needs a different argument; stated in Section 7",
+   "whyNotClosedNow": "needs a different argument; stated in Section 7"
+  },
+  {
+   "limitation": "State-dependent covariances, infinitely many components, Levy kernels, general Markov transitions",
+   "closingQuestion": "Can any of these be classified?",
+   "triedOrSearched": "not attempted",
+   "estimatedCost": "new research",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "outside the finite-mixture method",
+   "whyNotClosedNow": "outside the finite-mixture method"
+  },
+  {
+   "limitation": "Sharpness of the zero-type condition for Gaussian sources",
+   "closingQuestion": "Is there a Gaussian-source nonlinear example at positive type?",
+   "triedOrSearched": "sharpness shown for bandlimited sources only",
+   "estimatedCost": "new research",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "recorded in the paper",
+   "whyNotClosedNow": "recorded in the paper"
+  },
+  {
+   "limitation": "Scripts must fail under python -O",
+   "closingQuestion": "Do the checks raise without assert?",
+   "triedOrSearched": "no assert statements; negative control exits 1 under -O",
+   "estimatedCost": "hours",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Literature search of limited scope (no MathSciNet/zbMATH)",
+   "closingQuestion": "Would a wider search change attribution?",
+   "triedOrSearched": "arXiv sweep, Semantic Scholar citation graph, web searches; concurrent work found and credited",
+   "estimatedCost": "library time",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "recorded; priority claimed only within the searches",
+   "whyNotClosedNow": "recorded; priority claimed only within the searches"
+  },
+  {
+   "limitation": "Uncited background (Steinwart-Hush-Scovel 2006 and older Fock literature)",
+   "closingQuestion": "Is any of it needed for a claim?",
+   "triedOrSearched": "the paper derives the tube norm it uses and refers to Cho-Choe-Koo-Tien for Fock history",
+   "estimatedCost": "hours",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "not load-bearing",
+   "whyNotClosedNow": "not load-bearing"
+  }
+ ],
+ "extensionScout": {
+  "by": "the internal review and the lead",
+  "date": "2026-11-25",
+  "proposals": [
+   "weaken the growth hypothesis to zero exponential type with sharpness",
+   "several-variable Fock corollary",
+   "probit and logistic gate classification for kernel EDMD",
+   "different branch linear parts",
+   "compactness and Schatten classes for mixtures"
+  ],
+  "actions": [
+   "done: Lemma 2.4, Theorem 3.1, Corollary 3.3",
+   "done: Corollary 5.3",
+   "done: Corollary 6.2",
+   "attempted, not landed: open in Section 7",
+   "not attempted"
+  ]
+ }
+}

@@ -1,0 +1,68 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+jobs:
+  replay:
+    name: Manifest; two check programs under python -O; output comparison; figure; negative control
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: Install pinned packages
+        run: python3 -m pip install -r requirements.txt
+      - name: Run the programs in a fresh copy and compare with the shipped outputs
+        run: |
+          D="$RUNNER_TEMP/pkg"; mkdir -p "$D/results" "$D/figures"; cp -R code "$D/"; cd "$D"
+          python3 -I -c 'import sys, numpy, scipy, sympy, mpmath, matplotlib; print(sys.version, numpy.__version__, scipy.__version__, sympy.__version__, mpmath.__version__, matplotlib.__version__)'
+          set -e
+          python3 -I -B -O code/verify.py --output results/verification.json
+          python3 -I -B -O code/check_extensions.py --output results/extensions.json
+          python3 -I -B code/make_figures.py
+          test -s figures/phase-diagram.png && test -s figures/phase-diagram.pdf
+          SHIPPED="$GITHUB_WORKSPACE/results" python3 -I - <<'PY'
+          import json, os, sys
+          # Comparison policy (also in README.md, ENVIRONMENT.txt and REPLAY_RECEIPT.md): the interpreter-version field
+          # is excluded; every check name, pass flag, summary and non-numeric field must match exactly; numeric fields
+          # (quadrature residuals and 50-digit values printed as strings) must agree within absolute 1e-12 or relative 1e-9.
+          def num(v):
+              try:
+                  return float(v)
+              except (TypeError, ValueError):
+                  return None
+          def same(a, b):
+              if isinstance(a, dict) and isinstance(b, dict):
+                  return a.keys() == b.keys() and all(same(a[k], b[k]) for k in a)
+              if isinstance(a, list) and isinstance(b, list):
+                  return len(a) == len(b) and all(same(x, y) for x, y in zip(a, b))
+              if isinstance(a, bool) or isinstance(b, bool):
+                  return a == b
+              x, y = num(a), num(b)
+              if x is not None and y is not None:
+                  return abs(x - y) <= max(1e-12, 1e-9 * max(abs(x), abs(y)))
+              return a == b
+          for f in ('verification.json', 'extensions.json'):
+              a = json.load(open(os.path.join(os.environ['SHIPPED'], f))); b = json.load(open('results/' + f))
+              a['versions'].pop('python'); b['versions'].pop('python')
+              if a['summary'] != b['summary'] or a['summary']['status'] != 'PASS': sys.exit(f'{f}: summary differs or not PASS')
+              if not same(a, b): sys.exit(f'{f}: differs beyond the declared tolerance')
+              print(f, 'matches the shipped output under the declared policy')
+          PY
+      - name: Negative control (probit threshold 4D changed to 2D must fail under python -O)
+        run: |
+          N="$RUNNER_TEMP/neg1"; mkdir -p "$N/results"; cp -R code "$N/"; cd "$N"
+          sed -i 's/beta_c = mp.sqrt(4 \* D)/beta_c = mp.sqrt(2 * D)/' code/check_extensions.py
+          grep -q 'beta_c = mp.sqrt(2 \* D)' code/check_extensions.py
+          if python3 -I -B -O code/check_extensions.py --output results/extensions.json > out.txt 2>&1; then echo "changed threshold not detected"; exit 1; fi
+          cat out.txt; echo "negative control detected"
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"

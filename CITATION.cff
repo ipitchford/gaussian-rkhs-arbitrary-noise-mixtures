@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using these metadata."
+type: software
+title: "Additive-noise rigidity, a sharp growth threshold and an exact nonlinear-mixture boundary for Gaussian kernel spaces"
+abstract: "Unrefereed research candidate. For every additive noise law, a transition X' = F(x) + Z maps a Gaussian RKHS boundedly into another only if F is affine; the zero-exponential-type growth condition behind this is sharp. Finite mixtures of Gaussian branches with a common linear part are bounded exactly when each gate extends to an entire function within an explicit Gaussian growth bound: probit gates up to a threshold, logistic gates never. A several-variable Fock-space no-cancellation corollary follows."
+authors:
+  - name: "Anonymous"
+version: "0.1.0-candidate"
+date-released: "2026-11-26"
+doi: "10.5281/zenodo.24550034"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24550034"
+    description: "This version"
+  - type: doi
+    value: "10.5281/zenodo.24550033"
+    description: "All versions (concept DOI)"
+repository-code: "https://github.com/ipitchford/gaussian-rkhs-arbitrary-noise-mixtures"
+url: "https://evidencepress.org/releases/gaussian-rkhs-arbitrary-noise-mixtures/"
+license: CC0-1.0
+keywords:
+  - Gaussian kernel
+  - reproducing kernel Hilbert space
+  - kernel EDMD
+  - Koopman operator
+  - composition operators
+  - Fock space
+preferred-citation:
+  type: article
+  title: "Additive-noise rigidity, a sharp growth threshold and an exact nonlinear-mixture boundary for Gaussian kernel spaces"
+  authors:
+    - name: "Anonymous"
+  year: 2026
+  doi: "10.5281/zenodo.24550034"
+  publisher:
+    name: "Zenodo"
+  notes: "Version 0.1.0-candidate; unrefereed"

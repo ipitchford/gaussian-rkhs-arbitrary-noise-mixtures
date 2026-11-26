@@ -1,0 +1,1230 @@
+{
+  "checks": [
+    {
+      "expected": "1",
+      "name": "spectral_mass_P=1/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "4",
+      "name": "spectral_second_moment_P=1/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2*sqrt(3)/3",
+      "name": "Gaussian_probe_spectral_P=1/2_beta=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2*sqrt(3)/3",
+      "name": "Gaussian_probe_tube_P=1/2_beta=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "1",
+      "name": "Gaussian_probe_spectral_P=1/2_beta=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "1",
+      "name": "Gaussian_probe_tube_P=1/2_beta=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2*sqrt(3)/3",
+      "name": "Gaussian_probe_spectral_P=1/2_beta=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2*sqrt(3)/3",
+      "name": "Gaussian_probe_tube_P=1/2_beta=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "1",
+      "name": "spectral_mass_P=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2",
+      "name": "spectral_second_moment_P=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2*sqrt(3)/3",
+      "name": "Gaussian_probe_spectral_P=1_beta=1/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2*sqrt(3)/3",
+      "name": "Gaussian_probe_tube_P=1_beta=1/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "1",
+      "name": "Gaussian_probe_spectral_P=1_beta=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "1",
+      "name": "Gaussian_probe_tube_P=1_beta=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2*sqrt(3)/3",
+      "name": "Gaussian_probe_spectral_P=1_beta=3/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2*sqrt(3)/3",
+      "name": "Gaussian_probe_tube_P=1_beta=3/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "1",
+      "name": "spectral_mass_P=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2/3",
+      "name": "spectral_second_moment_P=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2*sqrt(3)/3",
+      "name": "Gaussian_probe_spectral_P=3_beta=1/6",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2*sqrt(3)/3",
+      "name": "Gaussian_probe_tube_P=3_beta=1/6",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "1",
+      "name": "Gaussian_probe_spectral_P=3_beta=1/3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "1",
+      "name": "Gaussian_probe_tube_P=3_beta=1/3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2*sqrt(3)/3",
+      "name": "Gaussian_probe_spectral_P=3_beta=1/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "2*sqrt(3)/3",
+      "name": "Gaussian_probe_tube_P=3_beta=1/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "0",
+      "name": "mixture_critical_slack_alpha=1/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "above_slack": "9/206",
+      "below_slack": "-9/194",
+      "name": "mixture_threshold_sides_alpha=1/2",
+      "passed": true
+    },
+    {
+      "expected": "-delta*eta**2/2 - 3*(-4*eta/3 + xi)**2/8",
+      "name": "modulation_complete_square_alpha=1/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "sqrt(3)/(3*sqrt(delta))",
+      "name": "modulation_HS_constant_alpha=1/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "0",
+      "name": "mixture_critical_slack_alpha=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "above_slack": "1/51",
+      "below_slack": "-1/49",
+      "name": "mixture_threshold_sides_alpha=1",
+      "passed": true
+    },
+    {
+      "expected": "-delta*eta**2/2 - (-2*eta + xi)**2/8",
+      "name": "modulation_complete_square_alpha=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "1/(2*sqrt(delta))",
+      "name": "modulation_HS_constant_alpha=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "0",
+      "name": "mixture_critical_slack_alpha=3/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "above_slack": "1/202",
+      "below_slack": "-1/198",
+      "name": "mixture_threshold_sides_alpha=3/2",
+      "passed": true
+    },
+    {
+      "expected": "-delta*eta**2/2 - (-4*eta + xi)**2/24",
+      "name": "modulation_complete_square_alpha=3/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "sqrt(3)/(3*sqrt(delta))",
+      "name": "modulation_HS_constant_alpha=3/2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "sqrt(2)/2",
+      "name": "modulation_exact_lambda_alpha_half_q_quarter",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "sqrt(2)",
+      "name": "modulation_exact_HS_alpha_half_q_quarter",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "common_covariance_Gram_q=0.0_y=-1.3",
+      "passed": true,
+      "scaled_matrix_error": 1.8249034013444632e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "common_covariance_Gram_q=0.0_y=0.0",
+      "passed": true,
+      "scaled_matrix_error": 5.110489722657964e-18,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "common_covariance_Gram_q=0.0_y=0.6",
+      "passed": true,
+      "scaled_matrix_error": 1.889048386759941e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "common_covariance_Gram_q=0.0_y=1.1",
+      "passed": true,
+      "scaled_matrix_error": 7.6296250855279e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "common_covariance_Gram_q=0.2_y=-1.3",
+      "passed": true,
+      "scaled_matrix_error": 1.793611448606426e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "common_covariance_Gram_q=0.2_y=0.0",
+      "passed": true,
+      "scaled_matrix_error": 3.3491855248645426e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "common_covariance_Gram_q=0.2_y=0.6",
+      "passed": true,
+      "scaled_matrix_error": 1.0534637882492291e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "common_covariance_Gram_q=0.2_y=1.1",
+      "passed": true,
+      "scaled_matrix_error": 2.96626719742647e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "common_covariance_Gram_q=1.0_y=-1.3",
+      "passed": true,
+      "scaled_matrix_error": 1.440434887323549e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "common_covariance_Gram_q=1.0_y=0.0",
+      "passed": true,
+      "scaled_matrix_error": 8.326672684688674e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "common_covariance_Gram_q=1.0_y=0.6",
+      "passed": true,
+      "scaled_matrix_error": 2.1604478427612854e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "common_covariance_Gram_q=1.0_y=1.1",
+      "passed": true,
+      "scaled_matrix_error": 1.1633157965004818e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "minimum_eigenvalue": 0.7336501297848178,
+      "name": "varied_covariance_Gram_y=-2.0",
+      "passed": true,
+      "scaled_matrix_error": 5.197261076783111e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "minimum_eigenvalue": 0.44029372577458886,
+      "name": "varied_covariance_Gram_y=0.0",
+      "passed": true,
+      "scaled_matrix_error": 4.9214977277440515e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "minimum_eigenvalue": 0.4945938040484983,
+      "name": "varied_covariance_Gram_y=0.75",
+      "passed": true,
+      "scaled_matrix_error": 8.650556333773394e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "minimum_eigenvalue": 0.7336501297848178,
+      "name": "varied_covariance_Gram_y=2.0",
+      "passed": true,
+      "scaled_matrix_error": 5.197261076783111e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "log_max_error": 0.0,
+      "name": "triangular_noise_norm_slope=1.0",
+      "passed": true,
+      "tolerance": 2e-09
+    },
+    {
+      "expected_squared_norm": 1.0,
+      "name": "triangular_noise_rational_norm_slope=1.0",
+      "passed": true,
+      "squared_norm": 1.0,
+      "tolerance": 1e-12
+    },
+    {
+      "log_max_error": 0.0,
+      "name": "triangular_noise_norm_slope=2.0",
+      "passed": true,
+      "tolerance": 2e-09
+    },
+    {
+      "expected_squared_norm": 0.5,
+      "name": "triangular_noise_rational_norm_slope=2.0",
+      "passed": true,
+      "squared_norm": 0.5,
+      "tolerance": 1e-12
+    },
+    {
+      "log_max_error": 0.0,
+      "name": "triangular_noise_norm_slope=3.0",
+      "passed": true,
+      "tolerance": 2e-09
+    },
+    {
+      "expected_squared_norm": 0.3333333333333333,
+      "name": "triangular_noise_rational_norm_slope=3.0",
+      "passed": true,
+      "squared_norm": 0.3333333333333333,
+      "tolerance": 1e-12
+    },
+    {
+      "log_max_error": 0.0,
+      "name": "triangular_noise_norm_slope=4.0",
+      "passed": true,
+      "tolerance": 2e-09
+    },
+    {
+      "expected_squared_norm": 0.25,
+      "name": "triangular_noise_rational_norm_slope=4.0",
+      "passed": true,
+      "squared_norm": 0.25,
+      "tolerance": 1e-12
+    },
+    {
+      "log_max_error": 4.440892098500626e-16,
+      "name": "triangular_noise_norm_slope=5.0",
+      "passed": true,
+      "tolerance": 2e-09
+    },
+    {
+      "log_max_error": 7.105427357601002e-15,
+      "name": "triangular_noise_norm_slope=8.0",
+      "passed": true,
+      "tolerance": 2e-09
+    },
+    {
+      "log_max_error": 0.0,
+      "name": "triangular_noise_norm_slope=20.0",
+      "passed": true,
+      "tolerance": 2e-09
+    },
+    {
+      "maximum_absolute_error": 8.88185195937854e-16,
+      "name": "Bessel_coefficients_against_Fourier_quadrature",
+      "passed": true,
+      "tolerance": 2e-13
+    },
+    {
+      "absolute_error": 2.6645352591003757e-15,
+      "name": "Bessel_weighted_norm_g_equal_one",
+      "passed": true,
+      "tolerance": 2e-11
+    },
+    {
+      "absolute_error": 3.8956806801599406e-16,
+      "name": "Bessel_warped_probe_x=-10.0",
+      "passed": true,
+      "tolerance": 2e-11
+    },
+    {
+      "absolute_error": 6.661338147750939e-16,
+      "name": "Bessel_warped_probe_x=-2.3",
+      "passed": true,
+      "tolerance": 2e-11
+    },
+    {
+      "absolute_error": 4.440892098500626e-16,
+      "name": "Bessel_warped_probe_x=0.0",
+      "passed": true,
+      "tolerance": 2e-11
+    },
+    {
+      "absolute_error": 0.0,
+      "name": "Bessel_warped_probe_x=0.7",
+      "passed": true,
+      "tolerance": 2e-11
+    },
+    {
+      "absolute_error": 8.881784197001252e-16,
+      "name": "Bessel_warped_probe_x=4.0",
+      "passed": true,
+      "tolerance": 2e-11
+    },
+    {
+      "absolute_error": 4.440892098500626e-16,
+      "name": "Bessel_warped_probe_x=10.0",
+      "passed": true,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "factorial_target_evaluation_y=0.0",
+      "passed": true,
+      "scaled_error": 2.220446049250313e-16,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "factorial_target_evaluation_y=0.4",
+      "passed": true,
+      "scaled_error": 1.971353078471163e-16,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "factorial_target_evaluation_y=0.8",
+      "passed": true,
+      "scaled_error": 6.2336822438874e-16,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "modulation_HS_2D_alpha=0.5_q=0.25",
+      "passed": true,
+      "scaled_error": 5.829753299092858e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "modulation_Nystrom_alpha=0.5_q=0.25_n=0",
+      "passed": true,
+      "relative_formula_error": 1.6642980062048018e-14,
+      "relative_grid_difference": 3.0459793698465236e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=0.5_q=0.25_n=1",
+      "passed": true,
+      "relative_formula_error": 1.6171952324442887e-14,
+      "relative_grid_difference": 2.7162599535229316e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=0.5_q=0.25_n=2",
+      "passed": true,
+      "relative_formula_error": 1.5857933832706133e-14,
+      "relative_grid_difference": 2.7633627272834453e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=0.5_q=0.25_n=3",
+      "passed": true,
+      "relative_formula_error": 1.5386906095101003e-14,
+      "relative_grid_difference": 2.5278488584808793e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=0.5_q=0.25_n=4",
+      "passed": true,
+      "relative_formula_error": 1.7742044783126675e-14,
+      "relative_grid_difference": 2.9046710485649865e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=0.5_q=0.25_n=5",
+      "passed": true,
+      "relative_formula_error": 1.6956998553784788e-14,
+      "relative_grid_difference": 2.936072897738662e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_HS_2D_alpha=1.0_q=0.75",
+      "passed": true,
+      "scaled_error": 8.881784197001252e-16,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "modulation_Nystrom_alpha=1.0_q=0.75_n=0",
+      "passed": true,
+      "relative_formula_error": 1.608589638639305e-14,
+      "relative_grid_difference": 2.9169092113992726e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=1.0_q=0.75_n=1",
+      "passed": true,
+      "relative_formula_error": 1.7009458403137124e-14,
+      "relative_grid_difference": 2.8215689821674523e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=1.0_q=0.75_n=2",
+      "passed": true,
+      "relative_formula_error": 1.680357255081278e-14,
+      "relative_grid_difference": 2.5765477911246263e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=1.0_q=0.75_n=3",
+      "passed": true,
+      "relative_formula_error": 1.7594140103718368e-14,
+      "relative_grid_difference": 2.7523506300866358e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=1.0_q=0.75_n=4",
+      "passed": true,
+      "relative_formula_error": 1.73907377518172e-14,
+      "relative_grid_difference": 2.7142553313583856e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=1.0_q=0.75_n=5",
+      "passed": true,
+      "relative_formula_error": 1.8955349553413548e-14,
+      "relative_grid_difference": 2.6992417764060892e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_HS_2D_alpha=1.5_q=1.25",
+      "passed": true,
+      "scaled_error": 1.3322676295501878e-15,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "modulation_Nystrom_alpha=1.5_q=1.25_n=0",
+      "passed": true,
+      "relative_formula_error": 1.5655602778217366e-14,
+      "relative_grid_difference": 2.8338622750444096e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=1.5_q=1.25_n=1",
+      "passed": true,
+      "relative_formula_error": 1.4522302653971635e-14,
+      "relative_grid_difference": 2.667683857088268e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=1.5_q=1.25_n=2",
+      "passed": true,
+      "relative_formula_error": 1.471087386251811e-14,
+      "relative_grid_difference": 2.791294014939333e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=1.5_q=1.25_n=3",
+      "passed": true,
+      "relative_formula_error": 1.4221516453374824e-14,
+      "relative_grid_difference": 2.8242729858110567e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=1.5_q=1.25_n=4",
+      "passed": true,
+      "relative_formula_error": 1.2763873758366672e-14,
+      "relative_grid_difference": 2.7442328580488344e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "modulation_Nystrom_alpha=1.5_q=1.25_n=5",
+      "passed": true,
+      "relative_formula_error": 1.2835678797911472e-14,
+      "relative_grid_difference": 2.8467248027051184e-14,
+      "tolerance": 2e-07
+    }
+  ],
+  "random_seed": null,
+  "randomness": "None: all parameter choices, quadrature rules and grids are deterministic.",
+  "scope": "Exact symbolic checks and deterministic numerical examples; not a proof or a priority assessment.",
+  "sections": {
+    "Bessel_warping": {
+      "Bessel_weighted_norm_squared": 4.436733829604037,
+      "a": 0.4,
+      "analytic_omitted_Bessel_tail_upper_bound": 9.348848158547673e-32,
+      "coefficient_comparison_count": 2400,
+      "coefficient_order_range": [
+        -12,
+        12
+      ],
+      "direct_Fourier_coefficient_weighted_norm_squared": 4.43673382960404,
+      "epsilon": 0.7,
+      "input_feature": "g(xi)=1, with source norm squared 1",
+      "limitation": "The analytic tail bound covers the Bessel-series truncation only. Quadrature and floating-point checks are numerical, not interval-certified.",
+      "maximum_coefficient_error": 8.88185195937854e-16,
+      "periodic_trapezoidal_nodes": 2048,
+      "pointwise_reconstructions": [
+        {
+          "absolute_error": 3.8956806801599406e-16,
+          "expected_sinc": -0.16863618619969856,
+          "imaginary_reconstruction": 2.7755575615628914e-17,
+          "real_reconstruction": -0.16863618619969817,
+          "x": -10.0
+        },
+        {
+          "absolute_error": 6.661338147750939e-16,
+          "expected_sinc": 0.8007623088566009,
+          "imaginary_reconstruction": 0.0,
+          "real_reconstruction": 0.8007623088566016,
+          "x": -2.3
+        },
+        {
+          "absolute_error": 4.440892098500626e-16,
+          "expected_sinc": 1.0,
+          "imaginary_reconstruction": 0.0,
+          "real_reconstruction": 0.9999999999999996,
+          "x": 0.0
+        },
+        {
+          "absolute_error": 0.0,
+          "expected_sinc": 0.9650473716926102,
+          "imaginary_reconstruction": 0.0,
+          "real_reconstruction": 0.9650473716926102,
+          "x": 0.7
+        },
+        {
+          "absolute_error": 8.881784197001252e-16,
+          "expected_sinc": 0.7084214896290113,
+          "imaginary_reconstruction": 0.0,
+          "real_reconstruction": 0.7084214896290122,
+          "x": 4.0
+        },
+        {
+          "absolute_error": 4.440892098500626e-16,
+          "expected_sinc": -0.16863618619969856,
+          "imaginary_reconstruction": 0.0,
+          "real_reconstruction": -0.1686361861996981,
+          "x": 10.0
+        }
+      ],
+      "source_quadrature_nodes": 96,
+      "target_evaluation_checks": [
+        {
+          "closed_squared_evaluation_norm": 1.0,
+          "scaled_error": 2.220446049250313e-16,
+          "spectral_sum_squared_evaluation_norm": 1.0000000000000002,
+          "y": 0.0
+        },
+        {
+          "closed_squared_evaluation_norm": 2.252712691094716,
+          "scaled_error": 1.971353078471163e-16,
+          "spectral_sum_squared_evaluation_norm": 2.2527126910947155,
+          "y": 0.4
+        },
+        {
+          "closed_squared_evaluation_norm": 34.19532988500536,
+          "scaled_error": 6.2336822438874e-16,
+          "spectral_sum_squared_evaluation_norm": 34.19532988500538,
+          "y": 0.8
+        }
+      ],
+      "weighted_norm_absolute_difference": 2.6645352591003757e-15
+    },
+    "Gaussian_Gram_quadrature": {
+      "M": 0.8,
+      "P": 1.0,
+      "common_covariance_matrix_count": 12,
+      "common_covariance_results": [
+        {
+          "normalised_min_eigenvalue": 0.6316710085355713,
+          "q": 0.0,
+          "quad_error_estimate": 2.6373156056215804e-10,
+          "scaled_matrix_error": 1.8249034013444632e-16,
+          "y": -1.3
+        },
+        {
+          "normalised_min_eigenvalue": 0.6316710085355712,
+          "q": 0.0,
+          "quad_error_estimate": 1.68623450511378e-10,
+          "scaled_matrix_error": 5.110489722657964e-18,
+          "y": 0.0
+        },
+        {
+          "normalised_min_eigenvalue": 0.6316710085355711,
+          "q": 0.0,
+          "quad_error_estimate": 1.8178900608070006e-10,
+          "scaled_matrix_error": 1.889048386759941e-16,
+          "y": 0.6
+        },
+        {
+          "normalised_min_eigenvalue": 0.6316710085355709,
+          "q": 0.0,
+          "quad_error_estimate": 2.434483483713785e-10,
+          "scaled_matrix_error": 7.6296250855279e-17,
+          "y": 1.1
+        },
+        {
+          "normalised_min_eigenvalue": 0.4172958793841096,
+          "q": 0.2,
+          "quad_error_estimate": 2.4411518676395085e-10,
+          "scaled_matrix_error": 1.793611448606426e-16,
+          "y": -1.3
+        },
+        {
+          "normalised_min_eigenvalue": 0.4172958793841103,
+          "q": 0.2,
+          "quad_error_estimate": 1.6041100234916675e-10,
+          "scaled_matrix_error": 3.3491855248645426e-16,
+          "y": 0.0
+        },
+        {
+          "normalised_min_eigenvalue": 0.4172958793841099,
+          "q": 0.2,
+          "quad_error_estimate": 1.9186797421720994e-10,
+          "scaled_matrix_error": 1.0534637882492291e-16,
+          "y": 0.6
+        },
+        {
+          "normalised_min_eigenvalue": 0.4172958793841098,
+          "q": 0.2,
+          "quad_error_estimate": 1.782807941729127e-10,
+          "scaled_matrix_error": 2.96626719742647e-16,
+          "y": 1.1
+        },
+        {
+          "normalised_min_eigenvalue": 0.12819972890199668,
+          "q": 1.0,
+          "quad_error_estimate": 2.786820000393307e-10,
+          "scaled_matrix_error": 1.440434887323549e-16,
+          "y": -1.3
+        },
+        {
+          "normalised_min_eigenvalue": 0.12819972890199668,
+          "q": 1.0,
+          "quad_error_estimate": 1.1302388954377044e-10,
+          "scaled_matrix_error": 8.326672684688674e-17,
+          "y": 0.0
+        },
+        {
+          "normalised_min_eigenvalue": 0.12819972890199632,
+          "q": 1.0,
+          "quad_error_estimate": 1.6107507094580512e-10,
+          "scaled_matrix_error": 2.1604478427612854e-16,
+          "y": 0.6
+        },
+        {
+          "normalised_min_eigenvalue": 0.12819972890199707,
+          "q": 1.0,
+          "quad_error_estimate": 1.4165281926794017e-10,
+          "scaled_matrix_error": 1.1633157965004818e-16,
+          "y": 1.1
+        }
+      ],
+      "complex_entry_integral_count": 144,
+      "limitation": "Positive sampled Gram eigenvalues do not prove a uniform lower bound over all imaginary states.",
+      "method": "independent real and imaginary adaptive quadrature over the real line",
+      "real_quad_call_count": 288,
+      "shifts": [
+        -1.0,
+        0.0,
+        2.0
+      ],
+      "varied_covariance_matrix_count": 4,
+      "varied_covariance_results": [
+        {
+          "normalised_min_eigenvalue": 0.7336501297848178,
+          "quad_error_estimate": 3.913526055682381e-07,
+          "scaled_matrix_error": 5.197261076783111e-16,
+          "y": -2.0
+        },
+        {
+          "normalised_min_eigenvalue": 0.44029372577458886,
+          "quad_error_estimate": 1.68623450511378e-10,
+          "scaled_matrix_error": 4.9214977277440515e-17,
+          "y": 0.0
+        },
+        {
+          "normalised_min_eigenvalue": 0.4945938040484983,
+          "quad_error_estimate": 1.1519163718122713e-10,
+          "scaled_matrix_error": 8.650556333773394e-17,
+          "y": 0.75
+        },
+        {
+          "normalised_min_eigenvalue": 0.7336501297848178,
+          "quad_error_estimate": 3.913526055682381e-07,
+          "scaled_matrix_error": 5.197261076783111e-16,
+          "y": 2.0
+        }
+      ],
+      "varied_covariances": [
+        0.0,
+        0.25,
+        0.9
+      ]
+    },
+    "Gaussian_modulation": {
+      "Nystrom_matrices": 6,
+      "limitation": "The finite discretisations check the first six squared singular values. They do not prove the complete Mehler expansion or the classification theorem.",
+      "method": "2D adaptive quadrature and two Gauss-Legendre Nystrom discretisations of the original Fourier kernel",
+      "parameter_count": 3,
+      "results": [
+        {
+          "HS_rectangle": {
+            "eta": [
+              -15.588457268119894,
+              15.588457268119894
+            ],
+            "xi": [
+              -22.045407685048602,
+              22.045407685048602
+            ]
+          },
+          "HS_scaled_error": 5.829753299092858e-13,
+          "alpha": 0.5,
+          "analytic_rectangle_tail_upper_bound": 6.384260120147768e-19,
+          "coarse_Nystrom": {
+            "eta_limit": 13.856406460551018,
+            "nodes_per_axis": 140,
+            "xi_limit": 19.595917942265423
+          },
+          "dblquad_error_estimate": 9.855346066290455e-10,
+          "delta": 0.16666666666666669,
+          "direct_2D_HS_norm_squared": 1.4142135623722705,
+          "fine_Nystrom": {
+            "eta_limit": 15.588457268119894,
+            "nodes_per_axis": 200,
+            "xi_limit": 22.045407685048602
+          },
+          "formula_HS_norm_squared": 1.414213562373095,
+          "lambda": 0.7071067811865475,
+          "q": 0.25,
+          "q_critical": 0.08333333333333333,
+          "relative_Nystrom_grid_differences": [
+            3.0459793698465236e-14,
+            2.7162599535229316e-14,
+            2.7633627272834453e-14,
+            2.5278488584808793e-14,
+            2.9046710485649865e-14,
+            2.936072897738662e-14
+          ],
+          "relative_singular_value_errors": [
+            1.6642980062048018e-14,
+            1.6171952324442887e-14,
+            1.5857933832706133e-14,
+            1.5386906095101003e-14,
+            1.7742044783126675e-14,
+            1.6956998553784788e-14
+          ],
+          "squared_singular_values_coarse_Nystrom": [
+            0.7071067811865377,
+            0.3535533905932698,
+            0.17677669529663473,
+            0.08838834764831752,
+            0.04419417382415868,
+            0.022097086912079313
+          ],
+          "squared_singular_values_fine_Nystrom": [
+            0.7071067811865592,
+            0.3535533905932794,
+            0.1767766952966396,
+            0.08838834764831975,
+            0.044194173824159966,
+            0.022097086912079962
+          ],
+          "squared_singular_values_formula": [
+            0.7071067811865475,
+            0.3535533905932737,
+            0.1767766952966368,
+            0.08838834764831839,
+            0.04419417382415918,
+            0.022097086912079587
+          ],
+          "u": 0.3535533905932738
+        },
+        {
+          "HS_rectangle": {
+            "eta": [
+              -9.0,
+              9.0
+            ],
+            "xi": [
+              -22.045407685048602,
+              22.045407685048602
+            ]
+          },
+          "HS_scaled_error": 8.881784197001252e-16,
+          "alpha": 1.0,
+          "analytic_rectangle_tail_upper_bound": 3.192130060073884e-19,
+          "coarse_Nystrom": {
+            "eta_limit": 8.0,
+            "nodes_per_axis": 140,
+            "xi_limit": 19.595917942265423
+          },
+          "dblquad_error_estimate": 9.01252714180227e-10,
+          "delta": 0.5,
+          "direct_2D_HS_norm_squared": 0.7071067811865483,
+          "fine_Nystrom": {
+            "eta_limit": 9.0,
+            "nodes_per_axis": 200,
+            "xi_limit": 22.045407685048602
+          },
+          "formula_HS_norm_squared": 0.7071067811865475,
+          "lambda": 0.5176380902050414,
+          "q": 0.75,
+          "q_critical": 0.25,
+          "relative_Nystrom_grid_differences": [
+            2.9169092113992726e-14,
+            2.8215689821674523e-14,
+            2.5765477911246263e-14,
+            2.7523506300866358e-14,
+            2.7142553313583856e-14,
+            2.6992417764060892e-14
+          ],
+          "relative_singular_value_errors": [
+            1.608589638639305e-14,
+            1.7009458403137124e-14,
+            1.680357255081278e-14,
+            1.7594140103718368e-14,
+            1.73907377518172e-14,
+            1.8955349553413548e-14
+          ],
+          "squared_singular_values_coarse_Nystrom": [
+            0.5176380902050346,
+            0.13870070824202785,
+            0.037164742763076186,
+            0.00995826281027666,
+            0.0026683084780305126,
+            0.0007149711018453948
+          ],
+          "squared_singular_values_fine_Nystrom": [
+            0.5176380902050497,
+            0.13870070824203176,
+            0.037164742763077144,
+            0.009958262810276935,
+            0.002668308478030585,
+            0.0007149711018454141
+          ],
+          "squared_singular_values_formula": [
+            0.5176380902050414,
+            0.1387007082420294,
+            0.03716474276307652,
+            0.00995826281027676,
+            0.0026683084780305386,
+            0.0007149711018454005
+          ],
+          "u": 0.7071067811865476
+        },
+        {
+          "HS_rectangle": {
+            "eta": [
+              -9.0,
+              9.0
+            ],
+            "xi": [
+              -42.21374183841087,
+              42.21374183841087
+            ]
+          },
+          "HS_scaled_error": 1.3322676295501878e-15,
+          "alpha": 1.5,
+          "analytic_rectangle_tail_upper_bound": 3.685954298943907e-19,
+          "coarse_Nystrom": {
+            "eta_limit": 8.0,
+            "nodes_per_axis": 140,
+            "xi_limit": 37.52332607858744
+          },
+          "dblquad_error_estimate": 7.500539391308765e-10,
+          "delta": 0.5,
+          "direct_2D_HS_norm_squared": 0.8164965809277248,
+          "fine_Nystrom": {
+            "eta_limit": 9.0,
+            "nodes_per_axis": 200,
+            "xi_limit": 42.21374183841087
+          },
+          "formula_HS_norm_squared": 0.8164965809277261,
+          "lambda": 0.560231504260063,
+          "q": 1.25,
+          "q_critical": 0.75,
+          "relative_Nystrom_grid_differences": [
+            2.8338622750444096e-14,
+            2.667683857088268e-14,
+            2.791294014939333e-14,
+            2.8242729858110567e-14,
+            2.7442328580488344e-14,
+            2.8467248027051184e-14
+          ],
+          "relative_singular_value_errors": [
+            1.5655602778217366e-14,
+            1.4522302653971635e-14,
+            1.471087386251811e-14,
+            1.4221516453374824e-14,
+            1.2763873758366672e-14,
+            1.2835678797911472e-14
+          ],
+          "squared_singular_values_coarse_Nystrom": [
+            0.5602315042600559,
+            0.17583388925856608,
+            0.05518710814492484,
+            0.017320989248671006,
+            0.0054363542254236945,
+            0.0017062505403119311
+          ],
+          "squared_singular_values_fine_Nystrom": [
+            0.5602315042600717,
+            0.17583388925857077,
+            0.05518710814492638,
+            0.017320989248671495,
+            0.005436354225423844,
+            0.0017062505403119797
+          ],
+          "squared_singular_values_formula": [
+            0.560231504260063,
+            0.17583388925856822,
+            0.05518710814492557,
+            0.01732098924867125,
+            0.005436354225423774,
+            0.0017062505403119578
+          ],
+          "u": 0.6123724356957945
+        }
+      ],
+      "squared_singular_values_per_parameter": 6,
+      "two_dimensional_integral_count": 3
+    },
+    "symbolic_constants": {
+      "Gaussian_probe_norms": [
+        {
+          "P": "1/2",
+          "beta": "1",
+          "norm_squared": "2*sqrt(3)/3"
+        },
+        {
+          "P": "1/2",
+          "beta": "2",
+          "norm_squared": "1"
+        },
+        {
+          "P": "1/2",
+          "beta": "3",
+          "norm_squared": "2*sqrt(3)/3"
+        },
+        {
+          "P": "1",
+          "beta": "1/2",
+          "norm_squared": "2*sqrt(3)/3"
+        },
+        {
+          "P": "1",
+          "beta": "1",
+          "norm_squared": "1"
+        },
+        {
+          "P": "1",
+          "beta": "3/2",
+          "norm_squared": "2*sqrt(3)/3"
+        },
+        {
+          "P": "3",
+          "beta": "1/6",
+          "norm_squared": "2*sqrt(3)/3"
+        },
+        {
+          "P": "3",
+          "beta": "1/3",
+          "norm_squared": "1"
+        },
+        {
+          "P": "3",
+          "beta": "1/2",
+          "norm_squared": "2*sqrt(3)/3"
+        }
+      ],
+      "Gaussian_probe_parameter_count": 9,
+      "critical_thresholds": [
+        {
+          "alpha": "1/2",
+          "q_critical": "1/12"
+        },
+        {
+          "alpha": "1",
+          "q_critical": "1/4"
+        },
+        {
+          "alpha": "3/2",
+          "q_critical": "3/4"
+        }
+      ],
+      "method": "SymPy exact rational Gaussian integration and symbolic simplification",
+      "spectral": [
+        {
+          "P": "1/2",
+          "mass": "1",
+          "second_moment": "4"
+        },
+        {
+          "P": "1",
+          "mass": "1",
+          "second_moment": "2"
+        },
+        {
+          "P": "3",
+          "mass": "1",
+          "second_moment": "2/3"
+        }
+      ],
+      "spectral_parameter_count": 3,
+      "threshold_parameter_count": 3
+    },
+    "triangular_noise": {
+      "P": 1,
+      "R": 1,
+      "characteristic_function": "max(1-abs(xi),0)",
+      "grid_points_per_parameter": 20001,
+      "method": "global dense scan plus bounded optimisation, compared with the stationary-point formula",
+      "parameter_count": 7,
+      "results": [
+        {
+          "formula_squared_norm": 1.0,
+          "log_max_error": 0.0,
+          "log_squared_norm": 0.0,
+          "numeric_maximiser": 0.0,
+          "numeric_squared_norm": 1.0,
+          "slope": 1.0,
+          "stationary_formula_maximiser": 0.0
+        },
+        {
+          "formula_squared_norm": 0.5,
+          "log_max_error": 0.0,
+          "log_squared_norm": -0.6931471805599453,
+          "numeric_maximiser": 0.0,
+          "numeric_squared_norm": 0.5,
+          "slope": 2.0,
+          "stationary_formula_maximiser": 0.0
+        },
+        {
+          "formula_squared_norm": 0.3333333333333333,
+          "log_max_error": 0.0,
+          "log_squared_norm": -1.0986122886681098,
+          "numeric_maximiser": 0.0,
+          "numeric_squared_norm": 0.3333333333333333,
+          "slope": 3.0,
+          "stationary_formula_maximiser": 0.0
+        },
+        {
+          "formula_squared_norm": 0.25,
+          "log_max_error": 0.0,
+          "log_squared_norm": -1.3862943611198906,
+          "numeric_maximiser": 0.0,
+          "numeric_squared_norm": 0.25,
+          "slope": 4.0,
+          "stationary_formula_maximiser": 0.0
+        },
+        {
+          "formula_squared_norm": 0.37302700182074083,
+          "log_max_error": 4.440892098500626e-16,
+          "log_squared_norm": -0.9861044710180951,
+          "numeric_maximiser": 0.7886751317347677,
+          "numeric_squared_norm": 0.373027001820741,
+          "slope": 5.0,
+          "stationary_formula_maximiser": 0.7886751345948129
+        },
+        {
+          "formula_squared_norm": 505.1699563514417,
+          "log_max_error": 7.105427357601002e-15,
+          "log_squared_norm": 6.224894919886621,
+          "numeric_maximiser": 0.9318656524010462,
+          "numeric_squared_norm": 505.16995635143815,
+          "slope": 8.0,
+          "stationary_formula_maximiser": 0.9318656463623108
+        },
+        {
+          "formula_squared_norm": 1.4382289403746125e+37,
+          "log_max_error": 0.0,
+          "log_squared_norm": 85.55906089489915,
+          "numeric_maximiser": 0.9898723696248648,
+          "numeric_squared_norm": 1.4382289403746125e+37,
+          "slope": 20.0,
+          "stationary_formula_maximiser": 0.9898723684219782
+        }
+      ]
+    }
+  },
+  "summary": {
+    "check_count": 97,
+    "failed_count": 0,
+    "passed_count": 97,
+    "status": "PASS"
+  },
+  "title": "Independent finite verification of Gaussian-kernel boundary constants and examples",
+  "versions": {
+    "numpy": "2.3.5",
+    "python": "3.12.11",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  }
+}

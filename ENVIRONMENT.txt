@@ -1,0 +1,19 @@
+Release replay environment (26 November 2026, macOS arm64 host)
+Interpreters (printed inside the run, not assumed):
+- verify.py: `uv run --python 3.12 --with numpy==2.3.5 --with scipy==1.17.0 --with sympy==1.14.0` resolved to CPython
+  3.12.11 with numpy 2.3.5, scipy 1.17.0, sympy 1.14.0.
+- check_extensions.py: `uv run --python 3.12 --with numpy==2.3.5 --with sympy==1.14.0 --with mpmath==1.3.0` resolved
+  to CPython 3.12.11 with numpy 2.3.5, sympy 1.14.0, mpmath 1.3.0.
+- make_figures.py: `uv run --python 3.12 --with numpy==2.3.5 --with matplotlib==3.10.8`.
+Packages: requirements.txt. No compiler. Working directory: package root. Flags: python3 -I -B -O for the two check
+programs; -I -B for make_figures.py. Run time: a few seconds each, one CPU. Deterministic: no random seeds are drawn
+at run time except fixed points in the Fock Gram test (results record the parameters).
+GitHub CI: ubuntu-latest, actions/setup-python 3.12, packages from requirements.txt. One job: manifest, both check
+programs under -O, the figure script, comparison with the shipped results under the policy below, a negative control
+(the probit threshold 4D changed to 2D in check_extensions.py must fail under -O), working tree unchanged.
+Comparison policy: the versions.python field is excluded (it records the interpreter); check names, pass flags,
+summaries and all non-numeric fields must match exactly; numeric fields (quadrature residuals, 50-digit values printed
+as strings) must agree within absolute 1e-12 or relative 1e-9. Quadrature residuals in verify.py can differ across
+platforms at about 1e-15; each check carries its own pass tolerance. The figure is regenerated and checked to exist;
+its PDF embeds a creation timestamp, so figure bytes are not compared (the PNG was byte-identical on the release host).
+On the release host both JSON outputs were byte-identical to the shipped ones.

@@ -1,0 +1,153 @@
+\subsection{Different fixed covariances}\label{sec:different}
+
+This subsection removes the common-covariance assumption. The linear
+part remains common, and each component's covariance remains
+independent of the state. The branches are then distinct Gaussian
+integral operators rather than weighted composition operators composed
+with one smoothing operator, so the Gram matrix is no longer fixed up to
+unitary conjugation; a compactness argument replaces it.
+
+\begin{lemma}[Uniform independence of Gaussian profiles]\label{lem:uniformgram}
+Fix positive definite matrices $S_j$ and vectors $b_j$,
+$1\le j\le N$, with pairwise distinct pairs $(S_j,b_j)$.
+Let $g_j$ be the $L^2(\R^m)$-normalised Gaussian proportional
+to $e^{-\xi^\top S_j\xi/8}$. There exists $\gamma>0$, depending
+only on these fixed parameters, such that the Gram matrix of
+\[
+ u_j(\xi)=g_j(\xi-c_j)e^{i\xi\cdot b_j}
+\]
+has smallest eigenvalue at least $\gamma$, for all choices
+of real centres $c_1,\ldots,c_N$.
+\end{lemma}
+
+\begin{proof}
+First, any fixed collection of these functions is linearly
+independent. Expanding their exponents gives quadratic
+coefficients $S_j/8$ and complex linear coefficients
+$S_jc_j/4+ib_j$. Choose a real direction $v$ outside the
+finitely many nonzero quadratic zero sets
+$v^\top(S_i-S_j)v=0$, and, when $S_i=S_j$, outside
+$(b_i-b_j)\cdot v=0$. On the complex line $\xi=tv$,
+the exponential functions have distinct quadratic coefficients,
+or distinct complex linear coefficients when the quadratics agree.
+Choose a ray $t=s e^{i\theta}$ with $\cos(2\theta)>0$ and
+with distinct real parts of the linear coefficients within
+each equal-quadratic group. Only finitely many angles are
+excluded. In a purported linear relation, the term with
+smallest quadratic coefficient and largest corresponding
+linear real part dominates as $s\to\infty$. Its coefficient
+is zero. Repeating removes every term. A relation that holds
+only almost everywhere on $\R^m$ first extends everywhere
+by continuity, and then to the entire functions by uniqueness.
+
+For uniformity, suppose a sequence of centre configurations
+made the smallest Gram eigenvalue tend to zero. Pass to a
+subsequence so that every pair of centre differences is
+bounded, or its norm tends to infinity. Bounded difference
+defines finitely many clusters. Within each cluster subtract
+one anchor centre and pass to a further subsequence so that
+all relative centres converge. Translating the cluster
+preserves its Gram matrix up to diagonal unitary phases.
+Remove those phases.
+
+Across different clusters the inner products tend to zero:
+their absolute values are bounded by the overlap of two
+fixed-shape positive Gaussians, at most
+$C e^{-c|c_i-c_j|^2}$. Within each cluster the Gram matrix
+converges to a fixed Gaussian Gram matrix, positive definite
+by the preceding independence argument. The full limiting
+matrix is block diagonal with positive definite blocks.
+Its smallest eigenvalue is positive, a contradiction.
+\end{proof}
+
+\begin{theorem}[Finite mixtures with different covariances]\label{thm:unequal}
+Let the pairs $(Q_j,b_j)$ be pairwise distinct, with
+$Q_j\succeq0$ and $b_j\in\R^m$. For Borel probabilities
+$p_j$ summing to one, define
+\[
+ Tf(x)=\sum_{j=1}^N p_j(x)\E f(Mx+b_j+G_j),
+ \qquad G_j\sim N(0,Q_j).
+\]
+This operator maps $\HH_P(\R^m)$ boundedly into $\HH_R(\R^d)$
+if and only if $M$ has full column rank and every $p_j$
+extends entire with
+\begin{equation}\label{eq:unequalcriterion}
+ \sup_{z=x+iy}|p_j(z)|e^{-2y^\top D_jy}<\infty,\qquad
+ D_j=R^{-1}-M^\top(P+4Q_j)^{-1}M.
+\end{equation}
+For every nonzero weight, $D_j\succeq0$, and that weight is
+constant along $\ker D_j$. A branch with a negative direction
+in $D_j$ must have identically zero weight.
+\end{theorem}
+
+\begin{proof}
+The positive-probe argument used for Theorem \ref{thm:mixture}
+again makes $M$ injective. Boundedness gives an entire
+$L^2(\mu_P)$-valued source representer $V_z$ with
+$\norm{V_z}\le\norm T e^{2y^\top R^{-1}y}$.
+The pure component features are
+\[
+ h_j(z)(\xi)=
+ e^{-\xi^\top Q_j\xi/2+i\xi\cdot(Mz+b_j)}.
+\]
+They are entire Hilbert-space-valued functions, and at every
+complex $z$ they are linearly independent. Their common
+nonvanishing exponential factor cancels, after which the
+independence proof in Lemma \ref{lem:uniformgram} applies.
+
+On real states $V_x=\sum_jp_j(x)h_j(x)$. The continuous
+multilinear exterior product
+$V_z\wedge h_1(z)\wedge\cdots\wedge h_N(z)$ is holomorphic
+and vanishes on $\R^d$, hence everywhere. Equivalently,
+apply arbitrary $N+1$ bounded linear functionals and continue
+the resulting scalar determinants. Independence implies
+$V_z\in\operatorname{span}\{h_j(z)\}$ for every complex $z$.
+Near a chosen $z_0$, select $N$ bounded functionals whose
+value matrix on the $h_j(z_0)$ is invertible. The same
+matrix remains invertible nearby; solving for the
+coefficients makes the $p_j$ holomorphic there. Uniqueness
+patches these coefficients into entire functions agreeing
+with the original Borel probabilities.
+
+Put $S_j=P+4Q_j$. In ordinary $L^2(\dd\xi)$ coordinates,
+remove the common unitary factor $e^{i\xi\cdot Mx}$.
+Completing the square shows that each normalised feature
+is a function in Lemma \ref{lem:uniformgram}, with
+centre $c_j(y)=-4S_j^{-1}My$ and fixed modulation $b_j$.
+Its unnormalised squared norm is
+\[
+ \norm{h_j(z)}^2=
+ \sqrt{\frac{\det P}{\det S_j}}\,
+       e^{4y^\top M^\top S_j^{-1}My}.
+\]
+The uniform Gram lower bound therefore gives
+\[
+ \gamma\sum_j|p_j(z)|^2
+       \sqrt{\frac{\det P}{\det S_j}}\,
+       e^{4y^\top M^\top S_j^{-1}My}
+ \le\norm{V_z}^2
+ \le\norm T^2e^{4y^\top R^{-1}y}.
+\]
+This proves \eqref{eq:unequalcriterion}. Conversely, set
+$E_j=(M^\top S_j^{-1}M)^{-1}$. Each pure component maps
+$\HH_P$ boundedly into $\HH_{E_j}$, and
+Lemma \ref{lem:multiplier} makes multiplication by $p_j$
+a bounded map to $\HH_R$. Their sum is bounded.
+
+Finally, if $v^\top D_jv<0$, the bound on the entire
+function $t\mapsto p_j(z_0+tv)$ is a negative quadratic
+in $\im t$, plus a linear term, and is independent of
+$\re t$. It is bounded on $\C$ and tends to zero as
+$|\im t|\to\infty$. Liouville's theorem makes it identically
+zero. If $D_j\succeq0$ and $v\in\ker D_j$, the same
+argument without decay makes the function constant.
+\end{proof}
+
+Linear independence of finitely many distinct Gaussian profiles is
+classical, in the same circle of ideas as identifiability of finite
+Gaussian mixtures. The new statement is the classification
+\eqref{eq:unequalcriterion}. The compactification proof supplies
+uniform control over all states. Its constant $\gamma$ is
+qualitative. The common-covariance formula \eqref{eq:unitarygram}
+provides a simpler explicit constant when that restriction is
+available.

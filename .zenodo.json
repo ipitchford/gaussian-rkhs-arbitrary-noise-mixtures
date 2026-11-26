@@ -1,0 +1,114 @@
+{
+ "title": "Additive-noise rigidity, a sharp growth threshold and an exact nonlinear-mixture boundary for Gaussian kernel spaces",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "description": "<p><strong>Unrefereed research candidate.</strong> Kernel methods for random dynamical systems (kernel EDMD and kernel Koopman methods) often assume that the transition operator Tf(x) = E[f(X') | X = x] maps the reproducing kernel Hilbert space (RKHS) of a Gaussian kernel boundedly into itself or into another Gaussian RKHS. An earlier Evidence Press release (doi:10.5281/zenodo.24089772) proved that, for transitions X' = F(x) + Z, this forces F to be affine when the characteristic function of the noise has a Gaussian lower bound, and asked whether that hypothesis can be removed and whether any state-dependent non-Gaussian transition can be admissible. This release answers both questions.</p><p><strong>Results.</strong> (A) For every probability law of the noise Z, boundedness between global Gaussian RKHSs forces F to be injective and affine, and the operator norm has an exact formula; the noise enters only through a deterministic composition. (B) More generally, composition from a stationary source whose spectral measure dominates Lebesgue measure near zero into a Hilbert space of entire functions forces an affine map whenever the logarithm of the target's evaluation norm has zero exponential type in the imaginary direction; for every positive type there is a target admitting a bounded nonlinear map, so the condition is sharp. (C) A finite state-dependent mixture of Gaussian branches with a common linear part and fixed covariances is bounded exactly when each mixing probability extends to an entire function obeying an explicit Gaussian growth bound. With branch variance q, a bump gate exp(-&alpha;x<sup>2</sup>) qualifies exactly when &alpha; &le; 8q/(1+4q); a probit gate &Phi;(&beta;x) exactly when &beta;<sup>2</sup> &le; 16q/(1+4q); a logistic gate never. (D) The same argument settles a several-variable case of the no-cancellation question for sums of weighted composition operators on Fock spaces.</p><p><strong>Limits.</strong> The noise is formal at the operator level; the norm formula, multiplier criterion and smoothing spectrum are classical; the one-variable Fock no-cancellation statement was proved concurrently and more generally by Cho, Choe, Koo and Tien and by Lin, Lu, Yang and Zu. Results concern global RKHS norms only, not finite-data prediction. Branches with different linear parts, state-dependent covariances and general Markov transitions remain open.</p><p><strong>Contents.</strong> The paper (LaTeX source and PDF), the phase-diagram figure, three Python programs (verify.py: 97 checks; check_extensions.py: 63 checks at 50-digit precision; make_figures.py) with their JSON outputs, the bibliography, a machine-readable index, a research-gate record, a review summary, a replay receipt and SHA-256 sums.</p><p><strong>Assurance.</strong> Written proofs with computational checks. Internal AI-assisted review only: a five-perspective Claude review panel, clean replays, one revision round with extensions, a re-review and a proof audit of new and rewritten proofs. No Astra/Codex review took place. This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Text CC0-1.0; code MIT.</p>",
+ "creators": [
+  {
+   "name": "Anonymous"
+  }
+ ],
+ "access_right": "open",
+ "license": "cc-zero",
+ "version": "0.1.0-candidate",
+ "publication_date": "2026-11-26",
+ "keywords": [
+  "Gaussian kernel",
+  "reproducing kernel Hilbert space",
+  "kernel EDMD",
+  "Koopman operator",
+  "stochastic dynamics",
+  "composition operators",
+  "Fock space",
+  "mixture of experts",
+  "probit gate"
+ ],
+ "notes": "Code (*.py and the CI workflow) is MIT; prose, manuscript, figures, results and records are CC0-1.0.",
+ "related_identifiers": [
+  {
+   "identifier": "https://github.com/ipitchford/gaussian-rkhs-arbitrary-noise-mixtures/tree/v0.1.0-candidate",
+   "relation": "isSupplementTo",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://evidencepress.org/releases/gaussian-rkhs-arbitrary-noise-mixtures/",
+   "relation": "isDocumentedBy",
+   "scheme": "url"
+  },
+  {
+   "identifier": "10.5281/zenodo.24089772",
+   "relation": "continues",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.5281/zenodo.24089772",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1137/26m1839689",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1016/j.jmaa.2022.126048",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1070/sm2012v203n11abeh004280",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1016/j.acha.2024.101657",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1002/pamm.202400127",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1007/s00605-018-1179-6",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1007/s11118-017-9678-y",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1002/mana.201800197",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "arXiv:2611.26206",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2611.21261",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2604.03965",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2611.19948",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2610.28279",
+   "relation": "references",
+   "scheme": "arxiv"
+  }
+ ]
+}
