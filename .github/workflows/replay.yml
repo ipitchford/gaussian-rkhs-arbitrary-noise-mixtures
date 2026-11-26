@@ -39,17 +39,23 @@ jobs:
                   return float(v)
               except (TypeError, ValueError):
                   return None
-          def same(a, b):
+          def diffs(a, b, path=''):
               if isinstance(a, dict) and isinstance(b, dict):
-                  return a.keys() == b.keys() and all(same(a[k], b[k]) for k in a)
+                  if a.keys() != b.keys(): return [(path, 'keys', sorted(a), sorted(b))]
+                  return [d for k in a for d in diffs(a[k], b[k], f'{path}/{a.get("name", k) if k == "passed" else k}')]
               if isinstance(a, list) and isinstance(b, list):
-                  return len(a) == len(b) and all(same(x, y) for x, y in zip(a, b))
+                  if len(a) != len(b): return [(path, 'length', len(a), len(b))]
+                  return [d for i, (x, y) in enumerate(zip(a, b)) for d in diffs(x, y, f'{path}[{x.get("name", i) if isinstance(x, dict) else i}]')]
               if isinstance(a, bool) or isinstance(b, bool):
-                  return a == b
+                  return [] if a == b else [(path, a, b)]
               x, y = num(a), num(b)
               if x is not None and y is not None:
-                  return abs(x - y) <= max(1e-12, 1e-9 * max(abs(x), abs(y)))
-              return a == b
+                  return [] if abs(x - y) <= max(1e-12, 1e-9 * max(abs(x), abs(y))) else [(path, a, b)]
+              return [] if a == b else [(path, a, b)]
+          def same(a, b):
+              d = diffs(a, b)
+              for row in d: print('DIFF', row)
+              return not d
           for f in ('verification.json', 'extensions.json'):
               a = json.load(open(os.path.join(os.environ['SHIPPED'], f))); b = json.load(open('results/' + f))
               a['versions'].pop('python'); b['versions'].pop('python')
