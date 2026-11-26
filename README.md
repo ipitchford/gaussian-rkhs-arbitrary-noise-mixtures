@@ -72,7 +72,8 @@ Expected: verify.py reports status PASS with 97 checks; check_extensions.py prin
 `{"check_count": 63, "failed": [], "status": "PASS"}`. The scripts use no `assert`, so checks stay active under `-O`.
 Comparison policy (GitHub CI on Linux): the interpreter-version field is excluded; check names, pass flags, summaries
 and non-numeric fields must match exactly; numeric fields within absolute 1e-12 or relative 1e-9 (quadrature residuals
-can differ at about 1e-15 across platforms). On the release host both JSON files were byte-identical to the shipped ones.
+can differ at about 1e-15 across platforms), except scipy's own quadrature error estimates (`quad_error_estimate`,
+diagnostics, not pass criteria) within relative 1e-4. On the release host both JSON files were byte-identical to the shipped ones.
 
 ## Cite
 

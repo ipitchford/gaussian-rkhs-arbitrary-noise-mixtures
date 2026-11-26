@@ -13,7 +13,9 @@ programs under -O, the figure script, comparison with the shipped results under 
 (the probit threshold 4D changed to 2D in check_extensions.py must fail under -O), working tree unchanged.
 Comparison policy: the versions.python field is excluded (it records the interpreter); check names, pass flags,
 summaries and all non-numeric fields must match exactly; numeric fields (quadrature residuals, 50-digit values printed
-as strings) must agree within absolute 1e-12 or relative 1e-9. Quadrature residuals in verify.py can differ across
+as strings) must agree within absolute 1e-12 or relative 1e-9. Exception: scipy's own quadrature error estimates
+(fields named quad_error_estimate in verify.py's varied-covariance Gram section; diagnostics, not pass criteria) within
+relative 1e-4; Linux CI and the macOS release host differ there at about 7e-6 relative. Quadrature residuals in verify.py can differ across
 platforms at about 1e-15; each check carries its own pass tolerance. The figure is regenerated and checked to exist;
 its PDF embeds a creation timestamp, so figure bytes are not compared (the PNG was byte-identical on the release host).
 On the release host both JSON outputs were byte-identical to the shipped ones.

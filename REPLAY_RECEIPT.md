@@ -14,4 +14,5 @@ working directory = package root, one CPU, a few seconds per program. Interprete
 stderr was empty for all passing runs. The outputs match the lead's replay of 25 November 2026. After the replay only
 the title-page DOI line of manuscript.tex, the rebuilt PDF and the release records changed; code, results, figures and
 requirements.txt are byte-identical to the approved candidate. GitHub CI on Linux reruns all three programs under the
-comparison policy in ENVIRONMENT.txt, with the negative control.
+comparison policy in ENVIRONMENT.txt (declared tolerances; scipy's quadrature error estimates in two varied-covariance
+Gram records differ at about 7e-6 relative on Linux), with the negative control.

@@ -34,6 +34,8 @@ jobs:
           # Comparison policy (also in README.md, ENVIRONMENT.txt and REPLAY_RECEIPT.md): the interpreter-version field
           # is excluded; every check name, pass flag, summary and non-numeric field must match exactly; numeric fields
           # (quadrature residuals and 50-digit values printed as strings) must agree within absolute 1e-12 or relative 1e-9.
+          # Exception: scipy's own quadrature error estimates (quad_error_estimate, diagnostics, not pass criteria)
+          # within relative 1e-4 (Linux and macOS differ at about 7e-6 relative).
           def num(v):
               try:
                   return float(v)
@@ -50,7 +52,8 @@ jobs:
                   return [] if a == b else [(path, a, b)]
               x, y = num(a), num(b)
               if x is not None and y is not None:
-                  return [] if abs(x - y) <= max(1e-12, 1e-9 * max(abs(x), abs(y))) else [(path, a, b)]
+                  rel = 1e-4 if path.endswith('quad_error_estimate') else 1e-9
+                  return [] if abs(x - y) <= max(1e-12, rel * max(abs(x), abs(y))) else [(path, a, b)]
               return [] if a == b else [(path, a, b)]
           def same(a, b):
               d = diffs(a, b)
