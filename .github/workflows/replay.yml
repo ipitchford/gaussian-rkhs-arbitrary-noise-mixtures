@@ -60,8 +60,8 @@ jobs:
       - name: Negative control (probit threshold 4D changed to 2D must fail under python -O)
         run: |
           N="$RUNNER_TEMP/neg1"; mkdir -p "$N/results"; cp -R code "$N/"; cd "$N"
-          sed -i 's/beta_c = mp.sqrt(4 \* D)/beta_c = mp.sqrt(2 * D)/' code/check_extensions.py
-          grep -q 'beta_c = mp.sqrt(2 \* D)' code/check_extensions.py
+          sed -i 's/beta_c = mp.sqrt(4 \* D)/beta_c = mp.sqrt(D + D)/' code/check_extensions.py
+          grep -q 'beta_c = mp.sqrt(D + D)' code/check_extensions.py
           if python3 -I -B -O code/check_extensions.py --output results/extensions.json > out.txt 2>&1; then echo "changed threshold not detected"; exit 1; fi
           cat out.txt; echo "negative control detected"
       - name: Working tree unchanged

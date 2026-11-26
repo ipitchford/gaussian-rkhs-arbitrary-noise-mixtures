@@ -9,7 +9,7 @@ working directory = package root, one CPU, a few seconds per program. Interprete
 | code/verify.py | -I -B -O | 0 | results/verification.json, byte-identical; status PASS, 97 of 97 checks |
 | code/check_extensions.py | -I -B -O | 0 | results/extensions.json, byte-identical; `{"check_count": 63, "failed": [], "status": "PASS"}` |
 | code/make_figures.py | -I -B | 0 | figures/phase-diagram.png byte-identical; phase-diagram.pdf differs only by its embedded creation data |
-| Negative control | check_extensions.py with the probit threshold `mp.sqrt(4 * D)` changed to `mp.sqrt(2 * D)`, -I -B -O | 1 | six probit checks fail (threshold formula and above-threshold growth at q = 0.25, 1, 3) |
+| Negative control | check_extensions.py with the probit threshold 4D changed to 2D (`mp.sqrt(D + D)`), -I -B -O | 1 | six probit checks fail (threshold formula and above-threshold growth at q = 0.25, 1, 3) |
 
 stderr was empty for all passing runs. The outputs match the lead's replay of 25 November 2026. After the replay only
 the title-page DOI line of manuscript.tex, the rebuilt PDF and the release records changed; code, results, figures and

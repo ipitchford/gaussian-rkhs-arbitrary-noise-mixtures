@@ -36,7 +36,7 @@ ev_z = evaluation at a complex point z = x + iy.
 | c_*, t_*, a_* and slope norms (N); warping and dilated growth bounds (B); probit bound C₀ and threshold, divergence above it, logistic pole (G2); Fock Gram unitary conjugation in two variables (F); threshold identities (G1, G2) | [code/check_extensions.py](code/check_extensions.py) | [results/extensions.json](results/extensions.json): `{"check_count": 63, "failed": [], "status": "PASS"}` | mpmath 50 digits; one numpy Fock test (tolerance 1e-10, observed 3.9e-15) |
 | Figure 1 | [code/make_figures.py](code/make_figures.py) | [figures/phase-diagram.png](figures/phase-diagram.png) | numpy, matplotlib |
 
-Negative control: changing the probit threshold `mp.sqrt(4 * D)` to `mp.sqrt(2 * D)` in check_extensions.py makes six
+Negative control: changing the probit threshold 4D to 2D in check_extensions.py makes six
 checks fail and the program exit 1 under python -O ([REPLAY_RECEIPT.md](REPLAY_RECEIPT.md); also run in CI). The
 finite calculations test constants and implementations; they do not certify the analytic theorems.
 
